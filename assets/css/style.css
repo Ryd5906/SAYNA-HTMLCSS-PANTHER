@@ -27,39 +27,56 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+
 }
 body{
     background-image: url(../Illustrations/Allpages/arrière_plan.png) ;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     color: white;
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 200px;
     padding-right: 200px;
-    background-color: #021740;
+    box-sizing: border-box;
+    background-color: #010a1c;
+    box-sizing: border-box;
 
 }
-nav {
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 50px;
+    /*header*/
+    nav {
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 50px;
+        color: #c6adad;
+    
+    }
 
-}
-nav li{
+nav li {
     display: inline;
-    font-family: 'beyno';
-    color: #DF99F2;
+    justify-content: space-between;
 }
-nav a {
-    display: inline-block;
-    text-align: center;
-    padding-right: 80px;
+nav li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'beyno';
+    padding-right: 70px;
+    
+}
+ul {
+    list-style-type: none;
+}
+
+nav :hover{
+    color: var(--pink-color--);
+    text-decoration: underline;
 }
 
 .description{
     font-family: 'cantarell';
+    color: aqua;
 }
 /*design de la partie forever*/
 #forever {
@@ -69,11 +86,13 @@ nav a {
 #forever h1{
     font-size: 68px;
     font-family: 'panthera';
+    color: #9E91B7;
 }
-#forever h2{
+#forever h2, #defi h2{
     font-family: 'beyno';
     font-size: 32px;
     margin-top: 20px;
+    color: #9E91B7;
 }
 #forever .container .part-one{
     padding-top: 130px;
@@ -81,9 +100,10 @@ nav a {
 #forever .container .part-one p {
     text-align: left;
     display: flex;
-    width: 40%;
+    width: 30%;
     margin-top: 50px;
     font-family: 'cantarell';
+    font-style: 'regular';
     font-size: 16px;
 }
 .image-forever{
@@ -97,7 +117,7 @@ nav a {
     display: flex;
     width: 100%;
     margin: 40px;
-    background-size: 50%;
+    background-size: 100%;
     margin: 20px;
     padding-left: 50px;
 }
@@ -114,32 +134,233 @@ nav a {
     height: 100%;
 }
 .slider-content{
-    padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
     background-color:#021740;
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 40%;
+    width: 100%;
+    font-family: 'cantarell';
+    font-size: 16px;
+    text-align: justify;
+
 
 }
 
 .titre{
-    padding-bottom: 25px;
-    padding-top: 25px;
+    padding-bottom: 35px;
+    padding-top: 35px;
+    color: #9E91B7;
+    
 }
 .description{
-    width: 60%;
+    width: 55%;
     text-align: justify;
-    font-size: 16px;
+    font-size: 14px;
+    color:  #ffffff;
 }
 #prince, .titre{
     font-family: beyno;
 }
-/*design de la partie t'challa*/
-.image-challa{
+/*design de la partie t'challa droite*/
+.challa-card{
 
+    position: absolute;
+    right: 200px;
+    text-align: justify;
+    top: 1450px;
+}
+
+
+
+
+
+
+.challa-card .btn input{
+    text-decoration: none;
+
+}
+.challa-card ul li{
+    text-decoration: none;
+}
+.challa-card .challa-image{
+    position: absolute;
+    left: 40px;
+
+
+}
+.challa-description{
+    background-color: white;
+    padding-top: 600px;
+    margin-top: 250px;
+    border-radius: 8px;
+    color: black;
+    width: 480px;
+    
+}
+
+
+.challa-description .challa-titre{
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-top: -280px;
+    margin-bottom: 20px;
+    font-family: 'cantarell';
+    font-size: 32px;
+    font-weight: 32px;
+}
+
+.btn-group{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.btn{
+    text-decoration: none;
+}
+.challa-description .btn{
+    padding: 8px;
+    margin-left: 15px;
+    margin-bottom: 50px;
+    border: #021740 1px solid;
+    border-radius: 5px;
+    list-style: none;
+    background-color: #3d2da6;
+    font-family:'cantarell';
+    font-size: 16px;
+    color: #9E91B7;
+    width: 100%;
+}
+.challa-description .biographie{
+    margin-left: 50px;
+    margin-top: 25px;
+    font-family: 'cantarell';
+    font-size: 14px;
+    padding-bottom: 10px;
+    line-height: 25px;
+
+}
+.challa-description .biographie ul li{
+    list-style: none;
+    text-align: justify;
+}
+/*image sur le coté droite*/
+.image-right{
+    position: absolute;
+    right: 200px;
+    top: 2350px;
+}
+
+/*design de la partie contact*/
+#contact{
+    width: 100%;
+    height: 100%;
+    background-image:url(../Illustrations/Accueil/Pantherhome7.png);
+    background-position: center;
+    margin-bottom: 100px;
+    padding-bottom: 500px;
+}
+
+#contact .wrap{
+    width: 1000px;
+    background-color: rgba(255, 255, 255, 0.268);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content:center;
+    height: 700px;
+    padding-top: 150px;
+    font-size: 36px;
     position: relative;
+    right: -350px;
+    top: 230px;
+    border-radius: 200px;
+}
+
+
+#contact h2{
+    margin-bottom: 60px;
+    font-size: 36px;
+    font-family: 'cantarell';
+}
+
+#contact h2{
+    color: var(--blue-night-color--);
+    position: absolute;
+    right: 350px;
+    top: 80px;
+}
+#contact p{
+    font-family: 'cantarell';
+    color: var(--blue-night-color--);
+    position: absolute;
+    right: 350px;
+    top: 50px;
+    font-size: 14px;
+}
+
+#contact .input-box{
+    font-family: 'panthera';
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+}
+#contact .input-box input{
+    width: 520px;
+    height: 56px;
+    border: none;
+    border:   var(--blue-night-color--) 1px solid;
+    border-radius: 30px;
+    background-color: transparent;
+    padding-left: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+#contact .textarea input{
+    width: 520px;
+    height: 190px;
+    border: none;
+    border:   var(--blue-night-color--) 1px solid;
+    border-radius: 30px;
+    background-color: transparent;
+    padding-left: 10px;
+    font-size: 16px;
+    color: white
+}
+
+#contact .textarea{
+    font-family: 'cantarell';
+    margin-top: 40px;
+    width: 100%;
+    height: 150px;
+    
+}
+
+#contact .input-box input::placeholder {
+    color: var(--blue-night-color--);
+}
+#contact .textarea input::placeholder{
+    color: var(--blue-night-color--);
+}
+
+
+#contact .submit-box input{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border: none;
+    outline: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;    
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 70px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-family: 'cantarell';
+
 }
 
 /* page wakanda*/
@@ -197,10 +418,152 @@ nav a {
     width: 110%;
 }
 .youtube{
-    background-color: #07338c;
+    background-color: #3d2da6;
     width: 60%;
     padding: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
     color: white;
+}
+
+/*design de la section enigme*/
+#defi{
+    margin-bottom: -250px;
+}
+
+#defi .enigme-image{
+    width: 10%;
+    position: relative;
+    right: 600px;
+    top: -350px;
+}
+#defi .wrapp-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}    
+#defi .wrapp-box .contenu-droite{
+    width: 40%;
+    position: relative;
+    left: 400px;
+    top: -100px;
+}
+.description-enigme{
+    width: 120%;
+    text-align: left;
+    position: relative;
+    right: 80px;
+    top: -100px;
+    font-family: 'cantarell';
+    font-style: 'regular';
+    font-size: 16px;
+    padding: 150px;
+    background-image: url(../Illustrations/Enigme/Pantherenigme2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+#defi .titre{
+    text-align: justify;
+    font-size: 36px;
+    font-style: 'regular';
+    margin-bottom: 100px;
+    letter-spacing: 5px;
+
+}
+.titre-transcription{
+    padding-top: 10px;
+    font-family: 'wakanda forever';
+    font-style: 'regular';
+    font-size: 43px;
+    word-spacing: 20px;
+    color: #9E91B7;
+    line-height: 70px;
+}
+
+#transcription .wrapp-box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#transcription .contenu-gauche{
+    margin-right: 50px;
+    padding-right: 100px;
+    background-color: #DF99F2;
+}
+#transcription .contenu-droite1{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 60px;
+    text-align-last: center;
+    width: 90%;
+}
+#transcription .contenu-gauche .titre-transcription{
+    padding-bottom: 10px;
+    
+}
+/*section  transcription*/
+#transcription {
+    width: 100%;
+    height: 1000px;
+}
+
+/*design de la partie footer*/
+footer{
+    margin-top: 160px;
+    width: 100%;
+    height: 800px;
+    background-image: url(../Illustrations/Allpages/back_footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aqua;
+}
+
+footer .social-footer-image{
+    margin: 12px;
+}
+ footer ul li{
+    list-style: none;
+ }
+ footer .footer-h3{
+    font-family: 'cantarell';
+    margin-bottom: 20px;
+    font-size: 22px;
+    letter-spacing: 10px;
+ }
+ footer p{
+    font-family: 'cantarell';
+    line-height: 30px;
+    font-style: regular;
+ }
+ 
+footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+footer .sayna-marvel{
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: url(../Illustrations/Allpages/footer1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    bottom: -100px;
+}
+footer .about{
+    padding: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+footer .social-footer{
+    padding-top: 90px;
+    padding-left: 150px;
+    padding-bottom: 150px;
+    position: relative;
+    border-bottom: 500px;
 }
