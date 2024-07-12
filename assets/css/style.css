@@ -24,8 +24,8 @@
 }
 
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0p;
+    padding: 0p;
     box-sizing: border-box;
 
 }
@@ -44,8 +44,42 @@ body{
     box-sizing: border-box;
 
 }
-    /*header*/
-    nav {
+/*ba sur le coté haut*/
+.left-bar1{
+    position: absolute;
+    width: 1px;
+	height: 31%;
+	top: 0;
+	bottom: 0;
+	left: 102px;
+	border-right: var(--pink-color--) solid 4px;
+    opacity: 100%;
+}
+
+.left-bar2{
+    position: absolute;
+    width: 1px;
+	height: 51%;
+	top: 0;
+	bottom: 0;
+	left: 80px;
+	border-right: var(--pink-color--) solid 4px;
+    opacity: 100%;
+}
+/*partie scrolling*/
+.haut-scroll{
+    display: flex;
+    flex-direction: column;
+    width: 25px;
+    position: absolute;
+    left: 92px;
+    top: 300px;
+}
+.scroll-social{
+    margin-top: 25px;
+}
+/*header*/
+nav {
         display:flex;
         align-items: center;
         justify-content: space-between;
@@ -76,12 +110,15 @@ nav :hover{
 
 .description{
     font-family: 'cantarell';
-    color: aqua;
+    color: #ffffff;
+    text-align: justify;
+
 }
 /*design de la partie forever*/
 #forever {
     display: block;
     padding-bottom: 50px;
+    margin-bottom: 180px;
 }
 #forever h1{
     font-size: 68px;
@@ -98,13 +135,14 @@ nav :hover{
     padding-top: 130px;
 }
 #forever .container .part-one p {
-    text-align: left;
+    text-align: justify;
     display: flex;
     width: 30%;
     margin-top: 50px;
     font-family: 'cantarell';
     font-style: 'regular';
     font-size: 16px;
+    letter-spacing: 1px;
 }
 .image-forever{
     float: right;
@@ -116,48 +154,49 @@ nav :hover{
 .slider {
     display: flex;
     width: 100%;
-    margin: 40px;
-    background-size: 100%;
-    margin: 20px;
-    padding-left: 50px;
-}
-.slider-image{
-    width: 100%;
     height: 100%;
-    background-color: #07338c;
-    margin-left: 50px;
+    margin-top: 200px;
+    margin-left: -50px;
+    background-color:var(--blue-night-color--);
+    padding-left: 450px;
+    padding-bottom: -5px;
+    
 
 }
+.expect-slider{
+    position: absolute;
+    top: 865px;
+}
+
+
 .slider-image-2{
-    padding-top: 50px;
+    padding-top: 0px;
     width: 100%;
     height: 100%;
 }
+
 .slider-content{
-    padding-left: 50px;
-    padding-right: 50px;
-    background-color:#021740;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 100%;
+    padding: 20px;
     font-family: 'cantarell';
-    font-size: 16px;
+    justify-content: center;
     text-align: justify;
-
-
 }
+
+
+
 
 .titre{
-    padding-bottom: 35px;
-    padding-top: 35px;
+    padding-bottom: 25px;
+    padding-top: 25px;
     color: #9E91B7;
     
 }
-.description{
+.description-index{
     width: 55%;
     text-align: justify;
-    font-size: 14px;
+    font-size: 16px;
     color:  #ffffff;
+    font-family: 'cantarell';
 }
 #prince, .titre{
     font-family: beyno;
@@ -192,10 +231,12 @@ nav :hover{
 .challa-description{
     background-color: white;
     padding-top: 600px;
+    padding-bottom: 50px;
     margin-top: 250px;
     border-radius: 8px;
     color: black;
     width: 480px;
+    justify-content: center;
     
 }
 
@@ -231,23 +272,24 @@ nav :hover{
     width: 100%;
 }
 .challa-description .biographie{
-    margin-left: 50px;
+    margin-left: 25px;
     margin-top: 25px;
     font-family: 'cantarell';
     font-size: 14px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     line-height: 25px;
+    justify-content: center;
+    text-align: justify;
 
 }
 .challa-description .biographie ul li{
     list-style: none;
-    text-align: justify;
 }
 /*image sur le coté droite*/
 .image-right{
     position: absolute;
     right: 200px;
-    top: 2350px;
+    top: 2580px;
 }
 
 /*design de la partie contact*/
@@ -262,7 +304,7 @@ nav :hover{
 
 #contact .wrap{
     width: 1000px;
-    background-color: rgba(255, 255, 255, 0.268);
+    background-color:  rgba(255, 255, 255, 0.268);
     background-repeat: no-repeat;
     display: flex;
     justify-content:center;
@@ -273,6 +315,7 @@ nav :hover{
     right: -350px;
     top: 230px;
     border-radius: 200px;
+    margin-top: 50px;
 }
 
 
@@ -312,7 +355,7 @@ nav :hover{
     background-color: transparent;
     padding-left: 10px;
     font-size: 16px;
-    color: white;
+    color:  white;
 }
 
 #contact .textarea input{
@@ -324,7 +367,7 @@ nav :hover{
     background-color: transparent;
     padding-left: 10px;
     font-size: 16px;
-    color: white
+    color: white;
 }
 
 #contact .textarea{
@@ -341,12 +384,16 @@ nav :hover{
 #contact .textarea input::placeholder{
     color: var(--blue-night-color--);
 }
-
+#contact .submit-box{
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-bottom: 180px;
+}
 
 #contact .submit-box input{
     width: 100%;
     height: 50px;
-    background-color: white;
+    background-color: #ffffff;
     border: none;
     outline: none;
     padding-top: 10px;
@@ -361,6 +408,52 @@ nav :hover{
     cursor: pointer;
     font-family: 'cantarell';
 
+}
+/*contact enigme*/
+.enigme-reponse {
+    padding-top: 100px;
+    font-family: 'cantarell';
+    font-style: 'regular';
+}
+.enigme-reponse .enigme-input-box{
+    font-family: 'panthera';
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+}
+.enigme-reponse .enigme-input-box input{
+    width: 520px;
+    height: 56px;
+    border: none;
+    border:   var(--grey-color--) 1px solid;
+    border-radius: 30px;
+    background-color: transparent;
+    padding-left: 10px;
+    font-size: 16px;
+    color:  white;
+}
+.enigme-submit-box{
+    padding-left: 200px;
+    padding-right: 300px;
+    padding-bottom: 180px;
+}
+.enigme-reponse .enigme-submit-box input{
+    width: 100%;
+    height: 50px;
+    background-color: var(--grey-color--);
+    border: none;
+    outline: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;    
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 70px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-family: 'cantarell';
 }
 
 /* page wakanda*/
@@ -406,24 +499,34 @@ nav :hover{
     background-repeat: no-repeat;
     background-color: #02174039;
     background-size: contain;
-    margin-top: 50px;
+    margin-top: 10px;
+    margin-right: 100px;
     
 }
 #child-1{
-    width: 100%;
-    justify-content: space-around;
-    margin-left: 100px;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 #child-2{
-    width: 110%;
+    justify-content: center;
+    margin-left: 200px;
+}
+.description{
+    width: 100%;
 }
 .youtube{
     background-color: #3d2da6;
-    width: 60%;
-    padding: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 100%;
+    height: 280px;
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-top: 70px;
+    margin-top: 100px;
+    margin-bottom: 50px;
     color: white;
+    font-family: 'cantarell';
+    font-style: regular;
 }
 
 /*design de la section enigme*/
@@ -454,7 +557,7 @@ nav :hover{
     text-align: left;
     position: relative;
     right: 80px;
-    top: -100px;
+    top: -120px;
     font-family: 'cantarell';
     font-style: 'regular';
     font-size: 16px;
@@ -470,16 +573,23 @@ nav :hover{
     font-style: 'regular';
     margin-bottom: 100px;
     letter-spacing: 5px;
-
 }
-.titre-transcription{
+/*section  transcription*/
+#transcription {
+    width: 100%;
+    height: 1000px;
     padding-top: 10px;
+}
+    
+#transcription .titre-transcription{
+    padding-bottom: 100px;
     font-family: 'wakanda forever';
     font-style: 'regular';
     font-size: 43px;
     word-spacing: 20px;
     color: #9E91B7;
     line-height: 70px;
+    
 }
 
 #transcription .wrapp-box1{
@@ -489,8 +599,18 @@ nav :hover{
 }
 #transcription .contenu-gauche{
     margin-right: 50px;
-    padding-right: 100px;
-    background-color: #DF99F2;
+    padding-right: 50px;
+}
+#transcription .contenu-gauche .enigme-transcription{
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    font-family: 'cantarell';
+}
+#transcription .contenu-gauche .enigme-transcription .p1{
+    font-family: 'wakanda forever';
+    padding-top: 100px;
+    margin-bottom: 20px;
 }
 #transcription .contenu-droite1{
     margin-left: 20px;
@@ -503,11 +623,7 @@ nav :hover{
     padding-bottom: 10px;
     
 }
-/*section  transcription*/
-#transcription {
-    width: 100%;
-    height: 1000px;
-}
+
 
 /*design de la partie footer*/
 footer{
@@ -517,7 +633,6 @@ footer{
     background-image: url(../Illustrations/Allpages/back_footer.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: aqua;
 }
 
 footer .social-footer-image{
@@ -531,6 +646,8 @@ footer .social-footer-image{
     margin-bottom: 20px;
     font-size: 22px;
     letter-spacing: 10px;
+    font-size: 22px;
+    letter-spacing: 28%;
  }
  footer p{
     font-family: 'cantarell';
@@ -541,7 +658,7 @@ footer .social-footer-image{
 footer .container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 50px;
 }
 footer .sayna-marvel{
@@ -556,14 +673,32 @@ footer .sayna-marvel{
     bottom: -100px;
 }
 footer .about{
-    padding: 150px;
-    margin-left: 50px;
-    margin-right: 50px;
+    padding-top: 60px;
+    margin-right: 100px;
+    height: 250px;
+    padding-left: 60px;
 }
+
 footer .social-footer{
-    padding-top: 90px;
-    padding-left: 150px;
-    padding-bottom: 150px;
+    margin-left: 100px;
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
     position: relative;
     border-bottom: 500px;
+    font-size: 22px;
+    letter-spacing: 28%;
+    justify-content: space-evenly;
+}
+
+footer .droit{
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: space-around;
+    bottom: 80px;
+    width: 40%;
+    font-family: 'cantarell';
+    left: 700px;
 }
